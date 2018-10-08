@@ -9,6 +9,8 @@ This one is obtained by taking frames 8, 11, 14, 17 of each sequence in input an
 - For 9 frames ahead (about 0.51s). [[Download]](https://github.com/paulineluc/forecasting_dense_convolutional_features/raw/master/f2f_ft_nT3_chxyxe4vqc.tar.gz)  
 This one is obtained by taking frames 2, 5, 8, 11 of each sequence in input, and predicting frames 14, 17, 20. These are the predictions of the autoregressively finetuned model, which get 19.4 AP-50% and 41.2 mIOU over the moving classes. The second result is obtained by converting the instance segmentations to semantic segmentations using the simple procedure we describe in the paper, with threshold=0.5. We have also used this threshold for all our visualizations.
 
+Note: they are in the format expect by Cityscapes (COCO style-) evaluation and Detectron visualization scripts [here](https://github.com/facebookresearch/Detectron).
+
 Also, take a look at our qualitative results on the [project website](http://thoth.inrialpes.fr/people/pluc/instpred2018) !
 
 *[1] Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler, M., Benenson, R., Franke, U., Roth, S., Schiele, B.: The Cityscapes dataset for semantic urban scene understanding. CVPR 2016*
